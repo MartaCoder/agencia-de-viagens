@@ -1,0 +1,39 @@
+/* Define o estilo para o html e body */
+html,
+body {
+  background-color: rgb(220, 234, 245); /* Cor de fundo */
+  flex-direction: column; /* Define a direção do flex container */
+  display: flex; /* Define o display como flex */
+  height: 100%; /* Altura de 100% */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Define o estilo para a logo da navbar */
+.navbar .container-fluid .navbar-brand img {
+  width: 50px; /* Define a largura da imagem */
+}
+
+/* Define o estilo para o conteúdo principal */
+.content {
+  flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+}
+
+/* Define o estilo para as imagens do carrossel */
+.carousel-image {
+  height: 500px; /* Altura padrão das imagens do carrossel */
+  object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorção */
+}
+
+/* Define o estilo para o rodapé */
+.destaqueBordasFooter {
+  margin-top: 20px; /* Margem superior */
+  background-color: black; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto do rodapé */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 300px; /* Altura reduzida para telas menores */
+  }
+}
